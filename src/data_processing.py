@@ -14,3 +14,9 @@ class Process_data:
 
     def get_bar_data(self):
         return self.data
+
+    def get_mean(self, col_name):
+        return self.data[col_name].mean()
+
+    def describe_data(self):
+        return self.data.describe()
