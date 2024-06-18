@@ -67,9 +67,9 @@ st.title(":bar_chart: Data Visualizer")
 # with documentation:
 
 # st.sidebar.subheader("Upload CSV file")
-if st.sidebar.button("User Guide", use_container_width=True):
-    webbrowser.open("https://google.com")
-file = st.sidebar.file_uploader(label="", type="csv")
+# if st.sidebar.button("User Guide", use_container_width=True):
+#     # webbrowser.open("https://google.com")
+file = st.sidebar.file_uploader(label="Open CSV file", type="csv", label_visibility="collapsed")
 
 if file:
     data_obj = Process_data(file)
