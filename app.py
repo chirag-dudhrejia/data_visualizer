@@ -63,10 +63,7 @@ def plot_box(x_label, y_label, color_col):
 st.set_page_config(page_title="Data Visualizer", page_icon=":bar_chart:", layout="wide")
 title, documentation = st.columns(2)
 st.title(":bar_chart: Data Visualizer")
-# with title:
-# with documentation:
 
-# st.sidebar.subheader("Upload CSV file")
 # if st.sidebar.button("User Guide", use_container_width=True):
 #     # webbrowser.open("https://google.com")
 file = st.sidebar.file_uploader(label="Open CSV file", type="csv", label_visibility="collapsed")
@@ -79,9 +76,6 @@ if file:
     graphs_charts = ["Histogram", "Bar graph", "Scatter", "Pie Chart", "Line chart", "Box Plot"]
     chosen_graph = st.sidebar.selectbox(label="Choose Task", options=graphs_charts)
     columns = data_obj.get_columns()
-
-    # if chosen_graph == "Dataframe":
-    #     print_dataframe()
 
     if chosen_graph == "Histogram":
         x_label = st.sidebar.selectbox("Select X-axis:", options=columns)
