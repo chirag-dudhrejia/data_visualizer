@@ -1,18 +1,71 @@
-﻿# Data Visualizer
-### About Data Visualizer
+# 📊 Data Visualizer
 
-Data Visualizer is a sophisticated tool crafted to transform your CSV files into stunning, dynamic visualizations with ease. Simply upload your CSV file, select the columns you wish to visualize, and choose from a variety of graph types. Within moments, you’ll have beautiful, ready-to-use graphs that can be seamlessly integrated into your presentations and projects, enhancing their appeal and effectiveness.
+## Description
 
-**Key Features:**
-- **Effortless CSV Upload:** Easily upload your CSV files and select specific columns for visualization with a user-friendly interface designed for simplicity and efficiency.
-- **Wide Range of Graphs:** Choose from an array of graph types, including bar charts, line graphs, pie charts, scatter plots, and more, to best represent your data.
-- **Dynamic Visualizations:** All charts and graphs are created using Plotly, ensuring they are interactive and dynamic, providing a richer data exploration experience.
-- **Time-Saving:** Eliminate the need for complex coding or manual adjustments. Generate high-quality, ready-to-plot graphs in just a few clicks, significantly saving you time and effort.
-- **Customizable and Downloadable:** Tailor the appearance of your graphs to match your specific needs. Download your visualizations in various formats to enhance your presentations and reports effortlessly.
+**Data Visualizer** is a sophisticated tool crafted to transform your CSV files into stunning, dynamic visualizations with ease. Simply upload your CSV file, select the columns you wish to visualize, and choose from a variety of graph types. Within moments, you’ll have beautiful, ready-to-use graphs that can be seamlessly integrated into your presentations and projects, enhancing their appeal and effectiveness.
 
-**Why Choose Data Visualizer?**
-- **Seamless Experience:** Focus on analyzing and presenting your data, while Data Visualizer handles the creation of visually compelling graphs.
-- **Versatile and Accessible:** Perfect for data analysts, researchers, business professionals, and anyone looking to quickly and effectively visualize their data.
-- **Professional Quality:** Produce dynamic, publication-ready visualizations that add a professional touch to your work.
+## Tech Stack
 
-With Data Visualizer, effortlessly transform your raw data into captivating, insightful visualizations. Save time, enhance your presentations, and make data analysis a more enjoyable and productive experience. Discover the ease and power of Data Visualizer for all your data visualization needs.
+- **Python**: Core programming language used for writing the code of the project.
+- **Pandas**: Used for processing and manipulating the CSV data.
+- **Plotly**: Utilized for plotting interactive and visually appealing charts.
+- **Streamlit**: Employed to create an interactive dashboard that allows users to easily generate visualizations.
+- **Streamlit Cloud**: Hosting platform where the project is deployed, making it accessible to users online.
+
+## Demo
+
+Live view by clicking the badge: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://datavisualizerr.streamlit.app/)
+
+Watch the demo video to see the Data Visualizer in action:
+
+https://github.com/user-attachments/assets/ba806c7c-4b60-49fd-9123-af3ee020c347
+
+## Features
+
+- **Easy CSV Upload**: Quickly upload CSV files to start visualizing your data.
+- **Dynamic Visualizations**: Choose from multiple graph types to best represent your data.
+- **Interactive Selection**: Select the columns and graph types directly from the dashboard.
+- **Seamless Integration**: Export graphs that can be easily integrated into presentations and reports.
+- **Accessible Anywhere**: Hosted on Streamlit Cloud, making the tool accessible from anywhere.
+
+## How to Run the Project
+
+### Prerequisites
+
+Make sure you have Python 3.11 installed on your system. You'll also need `pip` to install the required Python packages.
+
+### Steps to Run
+
+1. **Clone the repository** to your local machine:
+   ```bash
+   git clone https://github.com/chirag-dudhrejia/data_visualizer.git
+
+2. Open the project folder:
+   ```bash
+   cd data_visualizer
+   
+3. Create a virtual environment:
+   ```bash
+   python -m venv venv
+
+4. Activate the virtual environment:
+    
+   * On Windows:
+     ```bash
+     .\venv\Scripts\activate
+
+   * On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+
+5. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   
+6. Run the Flask application:
+   ```bash
+   streamlit run app.py
+
+7. Access the application by opening your browser and navigating to the URL provided by Streamlit in your terminal.
+
+  
