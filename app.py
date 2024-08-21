@@ -1,7 +1,6 @@
 import streamlit as st
 from plotly import express as px
 from data_processing import Process_data
-import webbrowser
 
 
 def print_dataframe():
